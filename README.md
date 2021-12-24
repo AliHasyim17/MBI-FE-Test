@@ -13,7 +13,8 @@ The data must be stored so if you revisit the table page that already been visit
 
 For the graph you may use `name` label for the `x axis`, `mass` and `height` for `y axis`. The graph shall be in form of **Bar Chart**. The graph will only visualize data on current table page.
 
-The user will be able to **add** and **delete** datas from the table. The button to add shall be placed above the table. Once clicked, the browser will show a modal popup contains a form. The field should be the same as the table header. Once the form submitted, the data will be added to the first row and first page of the table. The data must persist even after the page refreshed. You should not worry if the first page will have more data than the rest. You will also provide a delete button on each table row. Delete button will **only appear** in the row of data that added by user using `add function` that you just made before. The add and delete feature will have nothing to do with data fetching, this feature only works locally.
+The user will be able to **add** and **delete** datas from the table. The button to add shall be placed above the table. Once clicked, the browser will show a modal popup contains a form. The form fields should be the same as the table header (`name`, `height`, `mass`, `hair_color`, and
+`skin_color`). Once the form submitted, the data will be added to the first row and first page of the table. The data must persist even after the page refreshed. You should not worry if the first page will have more data than the rest. You will also provide a delete button on each table row. Delete button will **only appear** in the row of data that added by user using `add function` that you just made before. The add and delete feature will have nothing to do with data fetching, this feature only works locally.
 
 The layout of the page will be title, table, and graph, each ordered vertically in one page.
 
