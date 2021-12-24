@@ -1,46 +1,40 @@
-# Getting Started with Create React App
+# MBI Tech Alliance Test
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Please read the instructions carefully before start working.**
 
-## Available Scripts
 
-In the project directory, you can run:
+### Objective
+You are going to create a one-page react application containing a **Table** and a **Graph** visualization of Star Wars Characters taken from https://swapi.dev/api/people.
 
-### `npm start`
+For the table you may use use the `name`, `height`, `mass`, `hair_color`, and
+`skin_color` column. The table shall be paginated, for pagination you can use query params provided like https://swapi.dev/api/people/?page=1,2,3 ...etc. 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The data must be stored so if you revisit the table page that already been visited before, the browser won't re-fetch same data. You may use any kind of method to achieve this.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+For the graph you may use `name` label for the `x axis`, `mass` and `height` for `y axis`. The graph shall be in form of **Bar Chart**. The graph will only visualize data on current table page.
 
-### `npm test`
+The user will be able to **add** and **delete** datas from the table. The button to add shall be placed above the table. Once clicked, the browser will show a modal popup contains a form. The field should be the same as the table header. Once the form submitted, the data will be added to the first row and first page of the table. The data must persist even after the page refreshed. You should not worry if the first page will have more data than the rest. You will also provide a delete button on each table row. Delete button will **only appear** in the row of data that added by user using `add function` that you just made before. The add and delete feature will have nothing to do with data fetching, this feature only works locally.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The layout of the page will be title, table, and graph, each ordered vertically in one page.
 
-### `npm run build`
+You should not worry about the responsiveness, aesthetics, and UI design, but you have to pay attention to the `User Experience` aspect.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### To do
+- Fork this repo to your github account, then clone to your local machine, then install all dependencies (`yarn` is recommended).
+- Finish the objectives, then push the changes to your forked repo.
+- Upon submitting, please write Installation instruction on `README.md` (it's okay to delete the test instructions written here), also please write a list of urls of your best work / portfolio.
+- Send the url of your test repo to the hiring team.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Dos and Don'ts
+- You **must** use `React Hook Form` for the `Add` feature 
+- You may express your creavity in UI design, UI layout, and/or page responsiveness as long as the main objectives are fulfilled.
+- You are allowed to use any plugins or library for state management, css, HTTP Request, or all other needs, except for one thing that will be stated in the next point.
+- You are **not allowed** to use any kind of **Component Library** such as `React Bootstrap`, `Reactstrap`, `React Material UI`, etc. All components must be build by yourself. But you may use css library like `Bootstrap`.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Bonus Points
+- Good utilisation of `Hook API` in any kind of form
+- Clean, well-documented, and readable code
+- Tidy and organized source code file structure
+- Code effeciency, *do more with less*
+- Unit testing
