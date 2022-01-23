@@ -22,8 +22,8 @@ You should not worry about the responsiveness, aesthetics, and UI design, but yo
 
 
 ### To do
-- Fork this repo to your github account, then clone to your local machine, then install all dependencies (`yarn` is recommended).
-- Finish the objectives, then push the changes to your forked repo.
+- Clone to your local machine, then install all dependencies (`yarn` is recommended).
+- Finish the objectives, then push the changes to the repo.
 - Upon submitting, please write Installation instruction on `README.md` (it's okay to delete the test instructions written here), also please write a list of urls of your best work / portfolio.
 - Send the url of your test repo to the hiring team.
 
