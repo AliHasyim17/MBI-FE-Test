@@ -1,5 +1,5 @@
 import React from 'react'
-import "./table.css";
+import "./component.css";
 
 export const Table = ({ people }: {people: any}) => {
     return (
